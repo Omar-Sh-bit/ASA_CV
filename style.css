@@ -1,0 +1,149 @@
+إعدادات أساسية
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* قسم الملف الشخصي */
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007BFF;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-image:hover {
+    transform: scale(1.1);
+}
+
+.profile-details h1 {
+    font-size: 2rem;
+    color: #007BFF;
+    margin: 0;
+}
+
+.profile-details p {
+    margin: 5px 0;
+}
+
+/* الحركات (Animations) */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* التعليم */
+.education-section {
+    padding: 20px 0;
+}
+
+h2 {
+    color: #333;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #007BFF;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    animation: slideIn 1s ease-in-out;
+}
+
+/* قائمة التدريب */
+.training-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.training-section ul li {
+    margin-bottom: 10px;
+    padding-left: 15px;
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.training-section ul li::before {
+    content: "✔";
+    color: #007BFF;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* قسم المهارات */
+.skills-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skills-list img {
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s ease;
+}
+
+.skills-list img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+
+/* معلومات التواصل */
+.contact-info {
+    background: #7ab1eb;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* تذييل */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+.footer p {
+    margin: 0;
+}
